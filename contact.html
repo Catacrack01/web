@@ -23,35 +23,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        /* Contenedor principal con altura suficiente para hacer scroll */
-        .content-google {
-            height: 200vh; /* Altura suficiente para hacer scroll */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Estilos de la imagen */
-        .google {
-            width: 500px; /* Tamaño inicial */
-            height: auto;
-            animation: scaleImage linear both;
-            animation-timeline: scroll(); /* Vincula la animación al scroll */
-            animation-range: 0% 100%; /* Rango de la animación */
-        }
-
-        /* Definición de la animación */
-        @keyframes scaleImage {
-            from {
-                transform: scale(1); /* Tamaño inicial */
-            }
-            to {
-                transform: scale(3); /* Tamaño final */
-            }
-        }
-    </style>
    
 </head>
 
@@ -202,16 +173,40 @@
                     
                     
                     <!-- Main Content -->
-                    <div id="main-content">
+                    <div id="main-content" style="margin-top: 100px;">
                         <!-- Main Page Content -->
                         <div id="main-page-content">
                             <!-- Fit Thumb Screen Effects -->                                                          
                             <div id="itemsWrapperLinks">                               
                                 <div id="itemsWrapper" class="webgl-fitthumbs fx-one">
-                                  <!--  <div class="content-google">
-                                        <img src="images/google_maps.png" class="google">  
-                                    </div> -->
+                                    
                                     <!-- Row -->
+                                    <div class="content-row row_padding_bottom light-section" data-bgcolor="#0C0C0C">
+                                        
+                                        <div class="zoom-gallery">
+                                            <ul class="zoom-wrapper-gallery" data-heightratio="0.6">
+                                                <li>
+                                                    <div class="zoom-img-wrapper">
+                                                        <img src="images/shortcodes/image01.png">
+                                                    </div>
+                                                </li>
+                                                <li class="zoom-center">
+                                                    <div class="zoom-img-wrapper">
+                                                        <img src="images/shortcodes/image04.png">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="zoom-img-wrapper">
+                                                        <img src="images/shortcodes/image03.png">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="zoom-wrapper-thumb"></div>
+                                        </div> 
+                                        
+                                    </div>
+                                     <!-- /Row -->
+                                    <!-- Row 
                                     <div class="content-row dark-section" data-bgcolor="#0c0c0c">
                                     
                                         <div class="clipped-image-wrapper">
@@ -228,7 +223,7 @@
                                         </div>
                                         
                                     </div> 
-                                   <!-- /Row -->
+                                    /Row -->
                                     
                                     
                                     <!-- Row -->
